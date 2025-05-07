@@ -19,20 +19,24 @@ header {
     list-style: none;
     align-items: center;
     background-color: lightcoral;
+    margin-top: 2rem;
 }
 
 .navigation li {
     flex: 1 1 auto;
+    margin: 5px;
 }
 
 .navigation a {
     text-decoration: none;
     text-align: center;
+    color: black;
 }
 
 main {
     background-color: lightsalmon;
     grid-column: 1/3;
+    padding-bottom: 6rem;
 }
 
 aside {
@@ -43,4 +47,5 @@ aside {
 footer {
     background-color: blanchedalmond;
     grid-column: 1/4;
+    padding-bottom: 2rem;
 }
