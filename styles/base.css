@@ -3,37 +3,22 @@
     --secondary-colour: lightsalmon;
     --accent1-colour: lightcoral;
     --accent2-colour: gray;
-    --heading-font: "Sriracha", cursive;
-    --body-font: "Monsterrat", sans-serif;
   }
 
 * {
     padding: 0;
     margin: 0;
 }
-
-.sriracha-regular {
-    font-family: "Sriracha", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  /* use a value from 100 to 900 for weight */
-  .montserrat-spicy {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
   
   body {
-    font-family: var(--heading-font);
+    font-family: "Sriracha", cursive;
     color: black;
   }
 
 header,
 main,
 footer {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
