@@ -1,0 +1,135 @@
+:root {
+    --primary-colour: blanchedalmond;
+    --secondary-colour: lightsalmon;
+    --accent1-colour: lightcoral;
+    --accent2-colour: gray;
+    --heading-font: "Sriracha", cursive;
+    --body-font: "Monsterrat", sans-serif;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.sriracha-regular {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* use a value from 100 to 900 for weight */
+  .montserrat-spicy {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: var(--heading-font);
+    color: black;
+  }
+
+header,
+main,
+footer {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-colour);
+    text-align: center;
+}
+
+h1 {
+    padding: 1rem;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    background-color: var(--accent1-colour);
+    text-align: center;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+    margin: 5px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.navigation a:hover {
+    border: 2px solid var(--accent2-colour);
+    border-radius: 10px;
+    padding: 2px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--secondary-colour);
+    padding-bottom: 2rem;
+}
+
+.card {
+    margin: 1rem;
+    border: 1px solid var(--accent2-colour);
+    border-radius: 10px;
+}
+
+.card p {
+    margin: 15px;
+}
+
+.card h2 {
+    background-color: var(--primary-colour);
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    padding: 5px;
+}
+
+.card h3 {
+    text-align: center;
+    border-bottom: dotted;
+    width: 50%;
+    margin-left: 5rem;
+}
+
+.card ul {
+    margin: 20% 20% 30% 30%;
+    width: 50%;
+}
+
+.card li {
+    margin: 1rem;
+}
+
+.profile {
+    float: right;
+    width: 150px;
+    height: auto;
+    margin: 10px 10px 10px 15px;
+    border: 1px solid var(--accent2-colour);
+}
+
+.country {
+    float: left;
+    width: 150px;
+    height: auto;
+    margin: 50px 10px 40px 5px;
+    border: 1px solid var(--accent2-colour);
+}
+
+footer {
+    background-color: var(--primary-colour);
+    text-align: center;
+    padding: 1rem 0;
+}

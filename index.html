@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Ethan Schlese</title>
+    <meta name="description"
+        content="A student homepage for Ethan Schlese for WDD131, Dynamic Web Fundamentals. This is a web development course offered by BYU Idaho.">
+    <meta name="author" content="Ethan Schlese">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <title>WDD131 | Ethan Schlese</title>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Ethan Schlese</h1>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a href="www.linkedin.com/in/eschlese">Linkedin</a>
+                </li>
+                <li>
+                    <a href="https://byupw.instructure.com/">Canvas</a>
+                </li>
+                <li>
+                    <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/10?lang=eng&id=p19#p19">Favourite
+                        Scripture</a>
+                </li>
+                <li>
+                    <a href="#">Final Project</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card aboutMe">
+            <h2>About Me</h2>
+            <img class="profile" src="images/profile.webp" alt="A headshot of Ethan with his snowboard.">
+            <p>My name is Ethan, I'm currently a student in BYU Pathways. I'm working towards a Bachelors in Software
+                Development. I'm from Edmonton, Alberta, and love spending time in the nearby Rocky Mountains. You can
+                usually find me snowboarding or longboarding in the mountains. Currently, I work as a Lifeguard at an
+                outdoor pool.</p>
+            <h3>Alberta, Canada</h3>
+            <img class="country" src="images/canada.webp" alt="The rocky mountains.">
+            <p>Canada is located in North America, and has ten provinces and three territories. It shares a southern
+                border with the United States, and is the world's second largest country by total area, along with
+                having the world's longest coastline. Canada is known for it's maple syrup, poutine, and hockey. Western
+                Canada in particular is home to the Rocky Mountains, and the greatest hocky team in the NHL; the
+                Edmonton Oilers.</p>
+        </section>
+        <section class="card webResources">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li>
+                    <a href="https://www.w3schools.com/">W3 Schools</a>
+                </li>
+                <li>
+                    <a href="https://squoosh.app/">Squoosh</a>
+                </li>
+                <li>
+                    <a href="https://chatgpt.com/">Chat GPT</a>
+                </li>
+                <li>
+                    <a href="https://fonts.google.com/">Google Fonts</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Ethan Schlese | Canada</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
