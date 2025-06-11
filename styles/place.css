@@ -1,0 +1,42 @@
+:root {
+    --primary-colour: rgb(233, 1, 1);
+    --secondary-colour: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+    background-color: var(--primary-colour);
+    color: var(--secondary-colour);
+}
+
+picture {
+    max-width: 750px;
+    height: auto;
+}
+
+table {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+th {
+    text-align: right;
+}
+
+th, td {
+    padding: 0.5rem;
+}
+
+.icon {
+    max-width: 300px;
+}
