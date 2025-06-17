@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Assignment | WDD 131 | Ethan Schlese</title>
+    <title>Product Review | WDD 131 | Ethan Schlese</title>
     <meta name="description" content="A product review form made for my week 5 assignment in WDD 131.">
     <meta name="author" content="Ethan Schlese">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
     <script src="scripts/form.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 
@@ -21,11 +24,11 @@
         <form action="review.html" method="get" class="wf1">
             <label>Product Name*
                 <select name="productName" id="productName" required>
-                    <option disabled selected>Select a Product...</option>
+                    <option value="" disabled selected>Select a Product...</option>
                 </select>
             </label>
-
-            <legend>Overall Rating*</legend>
+            
+            <p>Overall Rating*</p>
             <div class="rating-group">
             <label class="rating">1 <input type="radio" name="rating" id="oneStar" required></label>
             <label class="rating">2 <input type="radio" name="rating" id="twoStar" required></label>
@@ -36,7 +39,7 @@
 
             <label>Date of Installation*<input type="date" name="installDate" id="installDate" required></label>
 
-            <legend>What features did you find useful? (Check all that apply)</legend>
+            <p>What features did you find useful? (Check all that apply)</p>
             <div class="features-group">
             <label><input type="checkbox" name="durability" id="durability" value="yes">Durability</label>
             <label><input type="checkbox" name="ease" id="ease" value="yes">Ease of Use</label>

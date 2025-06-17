@@ -48,7 +48,7 @@ h1 {
     margin: 0.2rem;
 }
 
-.wf1 legend{
+.wf1 p{
     padding-left: 0.5rem;
     padding-top: 0.5rem;
 }
@@ -67,6 +67,10 @@ h1 {
 .rating-group {
     display: flex;
     max-width: 100%;
+}
+
+.rating-group label {
+    padding-top: 0;
 }
 
 .features-group input{
