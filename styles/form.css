@@ -1,0 +1,118 @@
+:root {
+    --primary-colour: blanchedalmond;
+    --secondary-colour: lightsalmon;
+    --accent1-colour: lightcoral;
+    --accent2-colour: gray;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Sriracha", cursive;
+    color: black;
+}
+
+header,
+main,
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--secondary-colour);
+    text-align: center;
+}
+
+h1 {
+    padding: 1rem;
+}
+
+/* Form */
+
+.wf1 {
+    max-width: 60%;
+    margin: 1rem auto 1rem auto;
+    border: 3px solid var(--accent1-colour);
+    padding: 0.5rem;
+    border-radius: 7px;
+    background-color: var(--primary-colour);
+}
+
+.wf1 label{
+    display: block;
+    padding: 0.5rem;
+    margin: 0.2rem;
+}
+
+.wf1 legend{
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.wf1 input,
+.wf1 textarea,
+.wf1 select
+{
+    display: block;
+}
+
+.wf1 select {
+    width: 80%;
+}
+
+.rating-group {
+    display: flex;
+    max-width: 100%;
+}
+
+.features-group input{
+    display: inline;
+    margin-right: 7px;
+}
+
+.wf1 textarea {
+    width: 80%;
+    height: 80px;
+}
+
+.wf1 input[type="submit"]{
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--accent1-colour);
+    font-size: medium;
+    font-weight: 600;
+    box-shadow: 1px 1px 5px var(--accent2-colour);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--primary-colour);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Review page */
+
+.review {
+    max-width: 50%;
+    margin: 1rem auto 1rem auto;
+    border: 3px solid var(--accent1-colour);
+    padding: 0.5rem;
+    border-radius: 7px;
+    background-color: var(--primary-colour);
+    text-align: center;
+}
+
+.review p {
+    font-size: larger;
+    margin: 1rem;
+}
