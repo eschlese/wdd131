@@ -12,13 +12,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
-    <script src="scripts/getdates.js"></script>
+    <link rel="stylesheet" href="styles/base-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/kla-logo.webp" alt="Kelowna Longboard Alliance logo">
-        <h1>Kelowna Longboard Alliance</h1>
+        <div class="title">
+            <img src="images/kla-logo.webp" alt="Kelowna Longboard Alliance logo" loading="lazy">
+            <h1>Kelowna Longboard Alliance</h1>
+        </div>
         <button type="button" id="menu" aria-label="menu button"></button>
         <nav>
             <ul class="navigation">
@@ -37,26 +41,52 @@
     <main>
         <div class="hero1">
             <h2>What is Longboarding?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi debitis possimus numquam eum totam ipsam
-                ut, est, corporis exercitationem fugit perferendis obcaecati cum pariatur sunt voluptatem neque nulla,
-                earum ab.</p>
-            <img src="images/maryhill.webp" alt="A longboarder tucking on their board through a corner.">
+            <p>Longboarding is a sport with a variety of different disciplines, but they all have one thing in common: a
+                longboard! A longboard is like a skateboard, but is typically a little longer, with bigger softer
+                wheels, and with trucks designed more for turning rather than grinding rails. Longboards can be used to
+                cruise around town, race down hills, do cool slide tricks, and much more. Ultimately, no matter what you
+                do on the board, it's about creative expression and having a lot of fun! If you're looking for something
+                exciting that will challenge you physically, then longboarding is for you!</p>
+            <div class="block"></div>
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/maryhill-large.webp">
+                <img src="images/maryhill.webp" alt="A longboarder tucking on their board through a corner."
+                    loading="lazy">
+            </picture>
         </div>
         <div class="hero2">
             <h2>The KLA Community</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus laudantium officia hic sequi cum
-                recusandae, quisquam nesciunt. Ipsa adipisci nisi minus et numquam magnam maxime, ut nihil doloremque
-                pariatur soluta.</p>
-            <img src="images/community.webp" alt="A group photo of longboarders in halloween costumes.">
+            <p>Here in Kelowna and the Okanagan area, we strive to maintain an inclusive, welcoming environment for the
+                new skater and experienced rider alike! We host regular meetups to ride together, and learn new skills,
+                including how to slide and stop on a longboard. At any meetup, you'll find a group of like-minded
+                individuals who are stoked to skate, stoked to help eachother learn to skate, and stoked to promote safe
+                skating! </p>
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/community-large.webp">
+                <img src="images/community.webp" alt="A group photo of longboarders in halloween costumes."
+                    loading="lazy">
+            </picture>
         </div>
-        <div class="learn-more">
-            <p>Are you interested? words words words</p>
+        <article>
+            <p>If you're looking to learn a new skill, want to dust off that old longboard in your garage, are seasoned
+                skater who just moved into town, or anything in-between, then this is the club for you! Contact us to
+                find out more and join our next meetup. We hope to see you soon!</p>
             <a href="contact-us.html">Learn More</a>
-        </div>
+        </article>
     </main>
     <footer>
-        <p>&copy;<span id="currentYear"></span> | Ethan Schlese | Canada</p>
-        <p id="lastModified"></p>
+        <div class="page-info">
+            <p>&copy;<span id="currentYear"></span> | Ethan Schlese | Canada</p>
+            <p id="lastModified"></p>
+        </div>
+        <div class="socials">
+            <a href="https://www.instagram.com/kelownalongboardalliance/" target="_blank">
+                <img src="images/instagram_logo.png" alt="Instagram logo" loading="lazy" width="50">
+            </a>
+            <a href="https://www.facebook.com/groups/143668038991287" target="_blank">
+                <img src="images/facebook_logo.png" alt="Facebook logo" loading="lazy" width="50">
+            </a>
+        </div>
     </footer>
 </body>
 
