@@ -30,13 +30,9 @@ footer {
 }
 
 .title img {
-    max-width: 200px;
+    width: 100px;
     height: auto;
     border-radius: 20px;
-}
-
-.title h1 {
-    font-size: 2.5em;
 }
 
 #menu {
@@ -144,9 +140,14 @@ footer {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    font-size: 0.7em;
 }
 
 .socials img{
-    width: 40px;
+    width: 35px;
     margin: 0 0.5rem;
+}
+
+.socials a {
+    text-decoration: none;
 }
